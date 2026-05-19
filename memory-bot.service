@@ -1,0 +1,13 @@
+[Unit]
+Description=DarkMedia-X Memory Optimization Bot
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/jfvallee/Repository/darkmedia-x_optimize_memory/memory_bot.sh
+Restart=always
+RestartSec=10
+User=root
+
+[Install]
+WantedBy=multi-user.target
